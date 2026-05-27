@@ -178,7 +178,7 @@
             <tr>
               <th>번호</th>
               <th>제목</th>
-              <th>글자수 / 점수</th>
+              <th>공백포함 / 공백제외</th>
               <th>내용</th>
             </tr>
           </thead>
@@ -190,10 +190,10 @@
 
         <div class="summary">
           전체 단락 수: ${paragraphIndex}개
-          / 전체 글자 수: ${totalChars}자
-          / 공백제외: ${totalCharsNoSpace}자
-          / 전체 점수: ${totalScore.toFixed(2)}점
-          / 공백제외 점수: ${totalScoreNoSpace.toFixed(2)}점
+          / 글자수(공백포함): ${totalChars}자
+          / 글자수(공백제외): ${totalCharsNoSpace}자
+          / 점수(공백포함): ${totalScore.toFixed(2)}점
+          / 점수(공백제외): ${totalScoreNoSpace.toFixed(2)}점
         </div>
       `;
     }
